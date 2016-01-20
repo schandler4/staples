@@ -5,7 +5,7 @@
 		<title>Data Design Project</title>
 	</head>
 	<body>
-		<h1>Data design of the Staples ordering subsystems</h1>
+		<h1>Data design of the Staples ordering subsystem</h1>
 		<h2>Sharpies.....</h2>
 		<h3>Persona</h3>
 		<p>The Staples ordering subsystem allows customers to order
@@ -34,9 +34,6 @@
 			He does this often, so he has a profile set up, and completes the
 			financial transaction by using his saved credit card.  He then tells
 			his secretary to pick them up on her lunch break.
-
-
-
 		</p>
 	</body>
 </html>
