@@ -35,5 +35,6 @@
 			financial transaction by using his saved credit card.  He then tells
 			his secretary to pick them up on her lunch break.
 		</p>
+		<img src="image/staplesErd.svg" alt="Staples ERD" />
 	</body>
 </html>
