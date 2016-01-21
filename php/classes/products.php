@@ -40,9 +40,18 @@ class Product {
 			throw(new RangeException("product id must be positive"));
 		}
 	}
+	/**
+	 * accessor method for product description
+	 * @return string descriptiopn of product
+	 **/
 	public function getProductDescription() {
 		return ($this->productDescription);
 	}
+	/**
+	 * @param int $newProductDescription sets new value of product description
+	 * @throws InvalidArgumentException if product description doesn't exist
+	 * @throws RangeException if product description is too long, 255 char max
+	 **/
 	public function setProductDescription($newProductDescription) {
 		$newProductDescription = filter_var($newProductDescription, FILTER_SANITIZE_STRING);
 		if(empty($newProductDescription) === true) {
