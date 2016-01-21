@@ -25,7 +25,6 @@ class Product {
 	public function getProductId() {
 		return ($this->productId);
 	}
-
 	/**
 	 * @param int $newProductId new value of product id
 	 * @throws InvalidArgumentException if product id isn't an integer
@@ -44,7 +43,6 @@ class Product {
 	public function getProductDescription() {
 		return ($this->productDescription);
 	}
-
 	public function setProductDescription($newProductDescription) {
 		$newProductDescription = filter_var($newProductDescription, FILTER_SANITIZE_STRING);
 		if(empty($newProductDescription) === true) {
