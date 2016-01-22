@@ -31,6 +31,12 @@ class Product {
 	 * @throws RangeException if product id is negative
 	 **/
 	public function setProductId($newProductId) {
+		//base case: if the product id is null. this is a new product without a mySQL assigned id (yet)
+		if($newProductId === null) {
+			$this->productId = null;
+			return;
+		}
+
 		$newProductId = filter_var($newProductId, FILTER_VALIDATE_INT);
 		if($newProductId === false) {
 			throw(new InvalidArgumentException("prodcutid is not an integer"));
